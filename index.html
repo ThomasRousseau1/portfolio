@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <title>Thomas Rousseau</title>
+</head>
+<body>
+    <div class="loader">
+        <img class="loader__image" src="ressources/images/loader portfolio.jpg">
+        <div class="loader__infos">
+            <p class="loader__name">Thomas Rousseau</p>
+            <p class="loader__description">Développeur Web</p>
+        </div>
+    </div>
+    <header>
+        <div class="header__container">
+            <img class="header__image" src="ressources/images/Photo cv1.jpg">
+            <h1><a href="index.html">Thomas Rousseau</a></h1>
+            <a class="header__contact" href="#footer">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="scroll">
+            <i class="fas fa-arrow-circle-up scroll__icon"></i>
+        </div>
+        <section class="presentation__container">
+            <img class="presentation__image" src="ressources/images/Photo cv1.jpg">
+            <h2>BIENVENUE !</h2>
+            <p class="presentation__description">
+                Sortant tout droit de la formation Développeur Web d'OpenClassrooms et ayant pris beaucoup de plaisir à réaliser chacuns des projets,
+                 je vous les présente par le biais de ce portfolio.
+                <br><br>
+                Aimant passer du temps sur le moindre petit détail, je m'oriente de plus en plus vers le développement frontend.
+                <br><br>Bonne visite !
+            </p>
+        </section>
+        <!-- <h2 class="work__title">CE QUE JE FAIS</h2> -->
+        <section class="work__container">
+            <div class="work__description">
+                <h3>Développement Frontend</h3>
+                <p>Intégration de maquettes, ajout d'effets visuels, User Interface.</p>
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="work__description">
+                <h3>Développement Backend</h3>
+                <p>Création d'API REST, gestion d'une base de données, sécurisation des données.</p>
+                <i class="fas fa-database"></i>
+            </div>
+            <div class="work__description">
+                <h3>SEO, accessibilité et performances</h3>
+                <p>Amélioration du référencement Google, respect des normes WCAG concernant l'accessibilité et vitesse de chargement.</p>
+                <i class="fas fa-tachometer-alt"></i>
+            </div>
+        </section>
+
+        <section class="langages">
+            <div class="langages__container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-sass"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-git-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </section>
+        <section class="projects__container">
+            <h2>Projets</h2>
+            <h3 class="project_name">Site personnel</h3>
+            <div class="project__firstSide">
+                <div class="project__container">
+                <p class="project__text">
+                    Création d'un site vitrine pour le lancement de mon activité de professeur de guitare.
+                    Le site est responsive et présente quelques modifications en version mobile par rapport à la version
+                    desktop.
+                </p>
+                </div>
+                <div class="image__container">
+                    <a href="https://thomasrousseau1.fr/" target="_blank">
+                        <img class="project__image" src="ressources/images/site_perso.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">Groupomania</h3>
+            <div class="project__secondSide">
+                <div class="image__container">
+                    <img class="project__image" src="ressources/images/groupomania.jpg">
+                </div>
+                <div class="project__container">
+                    <p class="project__text">
+                        L'objectif de ce projet était de créer un <strong>réseau social d'entreprise</strong> visant à faciliter les interactions entre
+                        les collègues de Groupomania. Pour cela, j'ai décidé d'utiliser la bibliothèque Javascript React pour gérer le frontend.
+                        <br><br>
+                        L'API a été crée grâce au framework node Express et utilise divers plugins pour sécuriser le site comme bcrypt, jsonwebtoken,
+                        password-validator, cors, dotenv ou encore multer pour les images.
+                        <br>
+                        J'ai décidé d'utiliser Sequelize pour intéragir avec la base de données MySql en passant par PhpMyAdmmin pour l'interface.
+                    </p>
+                    <div class="socials__secondSide">
+                        <i class="fab fa-react"></i>
+                        <a href="https://github.com/ThomasRousseau1/ThomasRousseau_7_27092021" target="_blank" class="project__icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">Hot Takes</h3>
+            <div class="project__firstSide">
+                <div class="project__container">
+                <p class="project__text">
+                    Sixième projet de la formation Développeur Web d'OpenClassrooms. Le but était de réaliser le backend de manière sécurisée en partant de 0
+                    et en ayant uniquement le frontend à disposition.<br><br>Pour la base de données j'ai choisi <strong>MongoDB</strong> pour y stocker les informations de connexion des
+                    utilisateurs ainsi que les informations concernant les sauces ajoutées par ces derniers. Au niveau de la sécurité, j'ai utilisé divers plugins comme 
+                    JSON Web Token, bcrypt, multer, password-validator. <br> <br>J'ai stocké l'url MongoDB contenant les informations de connexion à la base de données via 
+                    une variable d'environnement stockée dans un fichier .env, tout comme le Token.
+                </p>
+                <div class="socials__firstSide">
+                    <a href="https://github.com/ThomasRousseau1/ThomasRousseau_6_26082021" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+                <div class="image__container">
+                    <img class="project__image" src="ressources/images/hottakes.jpg">
+                </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">Oricam</h3>
+            <div class="project__secondSide">
+                <div class="image__container">
+                    <img class="project__image" src="ressources/images/oricam.jpg">
+                </div>
+                <div class="project__container">
+                <p class="project__text">
+                    Projet n°5 et premier projet où je devais utiliser du <strong>Javascript</strong> pur dans le cadre de la formation d'OpenClassrooms. L'objectif était
+                     de réaliser le frontend d'un <strong>site de e-commerce</strong> avec le backend à disposition.<br> <br>Pour la mise en forme du code, j'ai choisi d'utiliser 
+                     le pattern <strong>MVC</strong> (Model, Vue, Controller) pour une meilleure organisation du code. J'ai utilisé <strong>fetch</strong> pour afficher les données provenant de 
+                     l'<strong>API</strong> et le <strong>localstorage</strong> pour la persistance des données, notament pour l'ajout d'un produit au panier.
+                </p>
+                <div class="socials__secondSide">
+                    <a href="https://github.com/ThomasRousseau1/ThomasRousseau_5_14062021" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">La Chouette Agence</h3>
+            <div class="project__firstSide">
+                <div class="project__container">
+                <p class="project__text">
+                    Pour ce projet, le but était d'optimiser les <strong>performances</strong>, la <strong>SEO</strong> ainsi que l'<strong>accessibilité</strong> d'un site complet.<br>
+                    Concernant la SEO, certaines anciennes techniques de black hat étaient utilisées sur le site : divs remplies de keywords cachées,
+                    beaucoup de liens cassés présents sur le footer, textes sous forme d'images...etc.<br><br>
+                    Au niveau de l'accessibilité, les textes étaient trop petits et trop clairs pour certains. Le respect des normes <strong>WCAG</strong> avait était omis. 
+                    Pour ce qui est des performances, les images avaient une résolution beaucoup trop élevées par rapport à leur affichage sur page.
+                    Encore plus pour la version mobile du site.<br><br>
+                    <a class="project__link" href="https://lucbourrat.github.io/DW-P4-website/"><strong>Voici le site avant optimisation</strong></a>
+                </p>
+                <div class="socials__firstSide">
+                    <a href="https://github.com/ThomasRousseau1/ThomasRousseau_4_25052021" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                </div>
+                    <div class="image__container">
+                        <a href="https://thomasrousseau1.github.io/ThomasRousseau_4_25052021/" target="_blank">
+                            <img class="project__image" src="ressources/images/la_chouette_agence.jpg">
+                        </a>
+                    </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">OhMyFood</h3>
+            <div class="project__secondSide">
+                <div class="image__container">
+                    <a href="https://thomasrousseau1.github.io/ThomasRousseau_3_23042021/" target="_blank">
+                        <img class="project__image" src="ressources/images/ohmyfood.jpg">
+                    </a>
+                </div>
+                <div class="project__container">
+                <p class="project__text">
+                    3ème projet de la formation d'OpenClassrooms. Il fallait intégrer la maquette de la startup Ohmyfood de manière responsive et en 
+                    utilisant <strong>SASS</strong> pour le CSS. Un cahier des charges était fourni avec toutes les informations nécessaire pour respecter au mieux la maquette fournie. <br>
+                    <br>L'objectif principal était de réaliser des effets : remplissage progressif du coeur sur les cartes de chaques restaurants sur la page d'accueil, 
+                    affichage dynamique des menus en arrivant sur les pages de chacuns des restaurants par exemple. 
+                </p>
+                <div class="socials__secondSide">
+                    <a href="https://thomasrousseau1.github.io/ThomasRousseau_3_23042021/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <h3 class="project_name">Reservia</h3>
+            <div class="project__firstSide">
+                <div class="project__container">
+                <p class="project__text">
+                    Second projet de la formation Développeur Web d'OpenClassrooms. L'objectif était d'intégrer la maquette de Reservia, une agence 
+                    de réservation de vacances. Le site devait être totalement responsive et respecter les préconisations en terme de couleurs fournies, 
+                    icônes et polices. <br>
+
+
+                </p>
+                <div class="socials__firstSide">
+                    <a href="https://thomasrousseau1.github.io/ThomasRousseau_2_05042021/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="image__container">
+                    <a href="https://thomasrousseau1.github.io/ThomasRousseau_2_05042021/" target="_blank">
+                        <img class="project__image" src="ressources/images/reservia.jpg">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <h2 class="footer_title">Contactez-moi</h2>
+        <!-- <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="thomasrousseau1" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/thomasrousseau1?trk=profile-badge">Thomas Rousseau</a></div> -->
+        <div>
+            <a href="https://www.linkedin.com/in/thomasrousseau1/"></a>
+        </div>      
+        <div class="footer__container">
+            <div class="footer__contact">
+                <p>Thomas Rousseau</p>
+                <a href="mailto:thomas.rousseau500@outlook.fr">thomas.rousseau500@outlook.fr</a>
+                <p>06 58 95 48 64</p>
+            </div>
+            <div class="footer__socials">
+                <a href="https://github.com/ThomasRousseau1" target="_blank" class="footer__link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/thomasrousseau1/" target="_blank" class="footer__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/82c91e6d22.js" crossorigin="anonymous"></script>
+</body>
+</html>
